@@ -22,7 +22,7 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 .link{
-    background-color: rgb(120, 182, 115);
+    background-color: rgb(79, 103, 77);
     border-radius: 10px;
     padding: 5px;
     margin: 10px;
@@ -35,6 +35,14 @@ footer{
     transition: background-color 0.3s, color 0.3s;  
 }
 
+#lyrics{
+    background-color: rgb(120, 182, 115);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    
+}
 
 #form{
     background-color: rgb(120, 182, 115);
@@ -42,4 +50,43 @@ footer{
     padding: 20px;
     margin: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.field_name{
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    display: inline-block;
+    margin: 10px 0;
+    
+
+}
+input{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: calc(40% - 20px);
+    font-size: 15px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(150, 126, 126);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#center{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-directoin:column;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid hsl(158, 40.10%, 40.60%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgb(150, 126, 126);
+    width: 80%;
+    max-width: 800px;
+    height: 100%;
+
 }
