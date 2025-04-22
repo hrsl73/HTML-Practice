@@ -4,29 +4,82 @@
         <title>My First Webpage</title>
         <meta name="viewport" content="width-device-width">
         <link rel="icon" type="image/jpeg" href="images/WinterIsComing.jpeg">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>
-            this is an h1 heading
-        </h1>
-        <h2>this is an h2</h2>
-        <p style="font-size:20px">this is paragraph</p>
+        <header style="background-color:rgb(153,237,192); text-align:center; padding:20px;">
+            <h1>Welcome to HTML-CSS-JAVASCRIPT practice page</h1>
 
-        <a href="https://google.com" target="_blank" title="goes to google">
-            <h1>click me</h1>
-        </a>
-        <h4>this is lyrics for everybody knows song</h4>
-        <a href="lyrics.html" target="_blank" title="goes to lyrics">
-            <h1>click me</h1>
-        </a>
-        <a href="mailto:harshilmayani108@gmail.com">
-            <h1>email me</h1>
-        </a>
-        <hr>
-        <a href="https://en.wikipedia.org/wiki/Batman" title="know about Batman">
-        <span><h1>This is Batman</h1></span>d
-        <img src="images/Batman.jpeg" height="200" alt="this is Batman" style="border:2px solid">
-        </a>
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <hr>
+
+        </header>
+        
+        <main>
+        
+        
+        <h4>this is lyrics for "everybody knows" song</h4>
+        <a href="lyrics.html" target="_blank" title="goes to lyrics" style="color: aquamarine;" class="link">
+        Lyrics of song "Everybody knows"
+        </a> <br><br>
+        <a href="randomPractice/index.htm" class="link" style="color: aquamarine;">View other practices</a>
+        
+        
+<hr>
+        <form action="index.php" method="post" enctype="multipart/form-data">
+            <div id="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Spongebob Squarepants" required><br><br>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="spoungebob" minlength="6" maxlength="20" required><br><br>
+            
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="spoungebob@gmail.com"><br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="6" maxlength="20" required><br><br>
+
+            <label for="title">Title: </label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr." required>
+            <label for="Ms.">Ms.</label>
+            <input type="radio" id="Ms." name="title" value="Ms.">
+
+            <br><br>
+            <label for="payment">Payment</label>
+            <select name="payment" id="payment">
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="paypal">PayPal</option>
+                <option value="bhimupi">BHIM UPI</option>
+            </select><br><br>
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write something..."></textarea><br><br>
+
+            <label for="file">File</label>
+            <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png"> 
+            
+            <br><br>
+            <input type="reset">
+            <input type="submit"><br> 
+            </div>
+        </form>
+
+        </main>
+
+        <footer style="background-color:rgb(153,237,192); text-align:center; padding:20px;">
+            <hr>
+            author: harshil mayani<br>
+            &copy; 2025 <br>
+           <small></small> <a href="mailto:harshilmayani108@gmail.com" title="mail me">harshilmayani108@gmail.com</a> </footer>
+
+
+        </footer>
         
     </body>
 </html>

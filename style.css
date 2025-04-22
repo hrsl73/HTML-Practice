@@ -1,0 +1,45 @@
+main{
+    background-color:rgb(150, 126, 126);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+header{
+    background-color: rgb(150, 126, 126);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+footer{
+    background-color: rgb(150, 126, 126);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.link{
+    background-color: rgb(120, 182, 115);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;  
+}
+
+
+#form{
+    background-color: rgb(120, 182, 115);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
