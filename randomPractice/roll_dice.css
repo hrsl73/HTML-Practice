@@ -1,0 +1,43 @@
+#container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size:2rem;
+    font-weight: bold;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius:10px;
+    border:none;
+    background-color: hsla(240, 44%, 74%, 1.00);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: hsla(240, 26%, 39%, 1.00);
+}
+button:active{
+    background-color: hsla(240, 26%, 29%, 1.00);
+}
+
+input{
+    font-size:2rem;
+    width:150px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#diceresule{
+    margin:25px;
+
+}
+
+#diceimages img{
+    width:100px;
+    height:100px;
+    margin:10px;
+}
