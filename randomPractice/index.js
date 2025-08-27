@@ -1,4 +1,11 @@
+const ages =[16,17,18,18,50]
 
+const adults = ages.filter(isAdult)
+console.log(adults)
+
+function isAdult(element){
+    return element >=18
+}
 
 
 
