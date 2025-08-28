@@ -1,25 +1,25 @@
-const numbers=[1,2,3,4,5,6,7,8,9,10]
+// const numbers=[1,2,3,4,5,6,7,8,9,10]
 
-function square(num){
-    return Math.pow(num,2)
-}
-const squares = numbers.map(square)
-console.log(squares)
+// function square(num){
+//     return Math.pow(num,2)
+// }
+// const squares = numbers.map(square)
+// console.log(squares)
 
-const cubes = numbers.map(function(num){
-    return Math.pow(num,3)
-})
-console.log(cubes)
+// const cubes = numbers.map(function(num){
+//     return Math.pow(num,3)
+// })
+// console.log(cubes)
 
-const evens = numbers.filter(function(num){
-    return num%2===0
-})
-console.log(evens)
+// const evens = numbers.filter(function(num){
+//     return num%2===0
+// })
+// console.log(evens)
 
-const sum = numbers.reduce(function(accumulator,current){
-    return accumulator + current
-},0)
-console.log("this is sum:",sum)
+// const sum = numbers.reduce(function(accumulator,current){
+//     return accumulator + current
+// },0)
+// console.log("this is sum:",sum)
 
 
 function guessNumber(){
