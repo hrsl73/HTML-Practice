@@ -21,6 +21,75 @@
 // },0)
 // console.log("this is sum:",sum)
 
+// const date = new Date(2025,0,2,4,5,30)
+// const dateee = new Date(0)
+// console.log(date)
+// console.log(dateee)
+
+// function createCounter(){
+//     let count = 0
+//     function increment(){
+//         count++
+//         console.log(`count incremented to: ${count}`)
+//     }
+//     function getCount(){
+//         return count
+//     }
+//     return {increment, getCount}
+// }
+// const counter = createCounter()
+// console.log("current count is:", counter.getCount())
+// counter.increment()
+// // counter()
+// // counter()
+// console.log("current count is:", counter.getCount())
+// counter.increment()
+// console.log("current count is:", counter.getCount())
+
+// function createGame(){
+//     let score = 0
+//     function increaseScore(){
+//         score++
+//         console.log(`Score increased.`)
+//     }
+//     function decreaseScore(){
+//         score--
+//         console.log(`Score decreased.`)
+//     }
+//     function getScore(){
+//         return score
+//     }
+//     return {increaseScore, decreaseScore, getScore}
+// }
+// const game = createGame()
+// console.log("Initial score:", game.getScore())
+// game.increaseScore()
+// console.log("Current score:", game.getScore())
+// game.increaseScore()
+// console.log("Current score:", game.getScore())
+// game.decreaseScore()
+// console.log("Final score:", game.getScore())  
+
+// setTimeout(()=>{
+//     console.log("This message is shown after 2 seconds")
+// },2000)
+
+// for(let i=1;i<5;i++){
+//     setTimeout(()=>{
+//     console.log(`this message is shown after ${i*2} seconds`)
+// },i*2000)
+// }
+
+let timeoutId
+function startTimer(){
+    timeoutId = setTimeout(() => {window.alert("yout clicked the button 3 seconds ago")}, 3000);
+    console.log("Timer started")
+}
+function clearTimer(){
+    clearTimeout(timeoutId)
+    window.alert("Timer cleared")
+    console.log("Timer cleared")
+}
 
 function guessNumber(){
 

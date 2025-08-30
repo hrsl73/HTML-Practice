@@ -1,0 +1,152 @@
+body{
+  background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  background-position:center;
+  background-size:cover;
+  margin:0;
+  font-family:monospace;
+  color:white;
+}
+
+/* Navbar */
+#navbar{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  padding:1rem;
+  background-color:hsla(0,0%,100%,0.1);
+  backdrop-filter:blur(8px);
+  position:sticky;
+  top:0;
+}
+#navbar button{
+  font-size:1rem;
+  font-weight:bold;
+  padding:.5rem 1rem;
+  border:none;
+  border-radius:8px;
+  background-color:hsla(0, 2%, 10%, 0.20);
+  color:white;
+  cursor:pointer;
+  transition:background .3s;
+}
+#navbar button:hover{ background-color:hsla(0,0%,100%,0.4); }
+
+/* Sections */
+.section{
+  display:none;
+  min-height:90vh;
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+.section.active{ display:flex; }
+
+/* Small stack helper to center and space items */
+.stack{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:16px;
+}
+
+/* Glass utility */
+.glass{
+  background-color:hsla(0,0%,100%,0.1);
+  backdrop-filter:blur(10px);
+  border-radius:12px;
+  padding:1rem 2rem;
+}
+
+/* Clock */
+#clock{
+  font-size:6rem;
+  font-weight:bold;
+  text-align:center;
+}
+
+/* Toggle container */
+#toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Switch wrapper */
+.switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Hide default checkbox */
+.switch input {
+  display: none;
+}
+
+/* Slider background */
+.slider {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 25px;
+  backdrop-filter: blur(5px);
+  transition: 0.4s;
+}
+
+/* Circle knob */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Checked state */
+.switch input:checked + .slider {
+  background: rgba(255,255,255,0.4);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Label text */
+.toggle-label {
+  font-size: 0.9rem;
+}
+
+
+/* Stopwatch */
+#stopwatch{
+  font-size:4rem;
+  font-weight:bold;
+  text-align:center;
+}
+.controls{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+}
+.controls button{
+  font-size:1rem;
+  font-weight:bold;
+  padding:.5rem 1.5rem;
+  border:none;
+  border-radius:8px;
+  background-color:hsla(0,0%,100%,0.2);
+  color:white;
+  cursor:pointer;
+  transition:background .3s;
+}
+.controls button:hover{ background-color:hsla(0,0%,100%,0.4); }

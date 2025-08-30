@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clock & Stopwatch</title>
+  <link rel="stylesheet" href="digiClock.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <button onclick="showSection('clock-section')">Digital Clock</button>
+    <button onclick="showSection('stopwatch-section')">Stopwatch</button>
+  </nav>
+
+  <!-- Digital Clock -->
+  <div id="clock-section" class="section active">
+    <div id="clock-container" class="stack">
+      <div id="clock" class="glass">00:00:00</div>
+
+      <!-- 12/24h Toggle (blurred glass) -->
+      <div id="toggle-container">
+        <label class="switch">
+        <input type="checkbox" id="timeToggle">
+        <span class="slider"></span>
+        <span class="toggle-label">24 Hour Format</span>
+        </label>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- Stopwatch -->
+  <div id="stopwatch-section" class="section">
+    <div id="stopwatch-container" class="stack">
+      <div id="stopwatch" class="glass">00:00:00:00</div>
+      <div class="controls">
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="digiClock.js"></script>
+</body>
+</html>
