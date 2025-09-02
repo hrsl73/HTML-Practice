@@ -8,7 +8,6 @@ body{
      
 }
 
-
 #calculator{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #1C1C1C;
@@ -27,9 +26,6 @@ body{
     background-color:hsl(0, 0%, 20%);
 }
 
-
-
-
 #keys{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
@@ -37,7 +33,6 @@ body{
     padding:25px;
 
 }
-
 
 
 button{
