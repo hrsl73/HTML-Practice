@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html,body {
+      height: 100%;
+      margin: 0;
+      display: grid;
+      place-items: center; /* center the square */
+      background: #f6f7fb;
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+      background: black;
+      animation: rotate 3s linear infinite;
+      
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="square"></div>
+</body>
+</html>
